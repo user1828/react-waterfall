@@ -6,7 +6,7 @@ module.exports = {
 		var leading = opt.leading || false;       // 函数开始时调用
 		var maxWaiting = opt.maxWaiting || false; // 调用函数最大等待时间，防止迟迟不被调用
 		var initialTime = +new Date();
-        maxWaiting && (maxWaiting = Math.max(delay, maxWaiting));
+    maxWaiting && (maxWaiting = Math.max(delay, maxWaiting));
 		return function() {
 			clearTimeout(timer);
 			if(leading) {
